@@ -7,6 +7,36 @@
     <title>Document</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav">
+            <a class="navbar-brand" href="#">Notezilla</a>
+        <div class="borderXwidth">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+        </div>
+        <div class="enter">
+          <a href="/login.html"
+            ><button class="btnn" role="button">Log In</button></a
+          >
+          <a href="/signup.html"
+            ><button class="btnn" role="button">Sign Up</button></a
+          >
+        </div>
+           <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" onclick="myFunction()" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        </div>
+      
+
+    </nav>
+    <div id="Menuitems" class="response">
+        <a  onclick="myFunctionn()"  class="hehe" href="#">Notezilla</a>
+        <div><a  onclick="myFunctionn()"  class="lol" href="#">Home</a></div>
+        <div><a  onclick="myFunctionn()"  class="lol" href="#">About</a></div>
+        <div><a  onclick="myFunctionn()"  class="lol" href="/login.html">Login</a></div>
+        <div><a  onclick="myFunctionn()"  class="lol" href="/signup.html">Signup</a></div>
+    </div>
+
     <button id="addBtn">
         <i class="fas fa-plus"></i>
         Add Note
@@ -24,6 +54,14 @@
     <script src="https://kit.fontawesome.com/31811fd392.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+<script>
+    function myFunction() {
+        document.getElementById("Menuitems").style.display="block";
+    }
+    function myFunctionn() {
+        document.getElementById("Menuitems").style.display="none";
+    }
+</script>
 </html>
 
 <!-- #00203a -->
