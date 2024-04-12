@@ -66,8 +66,10 @@
     outline: 0;
 }
 
+
 #addBtn{
     position: fixed;
+    z-index: 100;
     right: 45px;
     top: 105px;
     /* background-color: #00472b; */
@@ -87,7 +89,9 @@
     width: 100%;
     background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
     position: fixed;
-
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .nav {
@@ -96,7 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
 
   
